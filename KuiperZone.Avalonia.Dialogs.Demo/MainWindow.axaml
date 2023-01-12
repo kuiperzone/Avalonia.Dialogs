@@ -1,0 +1,42 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="KuiperZone.Avalonia.Dialogs.Demo.MainWindow"
+        Title="KuiperZone.Avalonia.Dialogs.Demo"
+        Width="350"
+        Height="300"
+        WindowStartupLocation="CenterScreen"
+    >
+
+    <Grid
+        Margin="24"
+        ColumnDefinitions="* Auto *"
+        RowDefinitions="Auto Auto Auto Auto *">
+
+        <Button Grid.Column="1" Grid.Row="0"
+            Margin="6"
+            Content="OK, Cancel"
+            Click="OKCancel_Click"
+        />
+
+        <Button Grid.Column="1" Grid.Row="1"
+            Margin="6"
+            Content="Yes, No, YesAll, NoAll, Abort"
+            Click="YesNo_Click"
+        />
+
+        <Button Grid.Column="1" Grid.Row="2"
+            Margin="6"
+            Content="Exception"
+            Click="Exception_Click"
+        />
+
+        <TextBlock Grid.Column="1" Grid.Row="3"
+            Name="ResultBlock"
+            Margin="6"
+        />
+
+    </Grid>
+</Window>

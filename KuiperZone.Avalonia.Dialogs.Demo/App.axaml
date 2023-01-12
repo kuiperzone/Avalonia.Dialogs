@@ -1,0 +1,9 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="KuiperZone.Avalonia.Dialogs.Demo.App"
+             Name="Demo">
+    <Application.Styles>
+        <SimpleTheme Mode="Light"/>
+    </Application.Styles>
+
+</Application>
