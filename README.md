@@ -1,7 +1,7 @@
 # MessageBox for Avalonia #
 
-This is another **MessageBox** for Avalonia. It's mainly for my own use, however, it provides a great MessageBox
-where things are kept pretty simple and, yet, provide a means to internationalise language strings.
+This is another **MessageBox** for Avalonia. It's mainly for my own use, however it does provide a great but simple
+MessageBox with a means to internationalise language strings.
 
 It's simple to use:
 
