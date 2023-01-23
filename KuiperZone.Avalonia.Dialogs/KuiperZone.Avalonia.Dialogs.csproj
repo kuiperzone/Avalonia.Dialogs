@@ -15,6 +15,7 @@
     <Copyright>Andy Thomas 2023</Copyright>
     <Company>KuiperZone</Company>
     <Description>MessageBox and other dialogs</Description>
+    <PackageTags>Avalonia;MessageBox</PackageTags>
     <Language>en-US</Language>
     <PackageProjectUrl>https://github.com/kuiperzone/Avalonia.Dialogs</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
