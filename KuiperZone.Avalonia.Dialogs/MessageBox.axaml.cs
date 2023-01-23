@@ -52,7 +52,7 @@ public partial class MessageBox : Window
     }
 
     /// <summary>
-    /// Gets or sets the default application title. It is initalised from <see cref="Application.Current.Name"/>,
+    /// Gets or sets the default application title. It is initalised from <see cref="Application.Name"/>,
     /// but may be overridden.
     /// </summary>
     public static string DefaultTitle { get; set; }
@@ -115,7 +115,7 @@ public partial class MessageBox : Window
     /// <summary>
     /// Shows an instance of <see cref="MessageBox"/> with exception information. If stack is true,
     /// the full error stack is shown, whereas only the message is shown if false. If null, the
-    /// stack is shown only where DEBUG is defined. The result comprises a single <see cref="BoxButtons"/>
+    /// stack is shown only where DEBUG is defined. The result comprises a single <see cref="MessageBoxButtons"/>
     /// flag value pertaining to the button clicked.
     /// </summary>
     public static Task<MessageBoxButtons> ShowDialog(Window owner, Exception error, bool? stack = null)
@@ -134,6 +134,9 @@ public partial class MessageBox : Window
         return ShowDialog(owner, msg, error.GetType().Name);
     }
 
+    /// <summary>
+    /// Overrides.
+    /// </summary>
     protected override void OnOpened(EventArgs e)
     {
         base.OnOpened(e);
